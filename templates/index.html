@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Data Science and Machine Learning Survey</title>
+
+    <link rel="stylesheet" href="static/css/main.css" type="text/css">
+    <style>
+        body{
+            background-color:black;
+            /* background-image: url('istockphoto-91823303-612x612.jpeg'); */
+            /* background-image: url('https://www.open.edu/openlearn/pluginfile.php/1568585/mod_resource/content/0/opnl_1_786px.jpg');  */
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* font-family: 'Times New Roman', Times, serif; */
+        }
+        h4{
+            text-align: center;
+            /* font: Times; */
+        }
+        </style>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/brand/favicon.png" type="image/png">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+<body style="background-color:black" >
+<div class="main-content" id="panel">
+    <!-- Header -->
+    <div class="header pt-2">
+        <div class="container-fluid">
+            <div class="header-body">
+                <div class="row">
+                    <div class="col-xl-12 col-md-12 text-center">
+                        <div class="bg-dark nav-text font-weight-bold pt-2 pb-2">Data Science and Machine Learning Survey</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header pb-6 pt-2">
+        <div class="container-fluid">
+            <div class="header-body">
+                
+                <div class="row">
+                    <div class="col-xl-2 col-md-6">
+                        <div class="card card-stats">
+                            
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <h6 class="card-title text-uppercase mb-0">Survey Analytics</h6>
+                                        <span class="h4 font-weight-bold mb-0">DS & ML</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6">
+                        <div class="card card-stats">
+                            
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <h6 class="card-title text-uppercase mb-0"> Average Experience</h6>
+                                        <span class="h4 font-weight-bold mb-0" id="average_experience_level">0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6">
+                        <div class="card card-stats">
+                            
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <h6 class="card-title text-uppercase mb-0">Total Responders</h6>
+                                        <span class="h4 font-weight-bold mb-0 summary_numbers" id="total_responders_count">0</span> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6">
+                        <div class="card card-stats">
+                            
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <h6 class="card-title text-uppercase mb-0">Average Salary</h6>
+                                        <span class="h4 font-weight-bold mb-0" id="average_salary_bracket">0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6">
+                        <div class="card card-stats">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <h6 class="card-title text-uppercase mb-0">Average Skill Level</h6>
+                                        <span class="h4 font-weight-bold mb-0" id="average_skill_level">NA</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6">
+                        <div class="card card-stats">
+                            <div class="card-body button btn-warning" id="reset_button" style="background-color:white;">
+                                <div class="row">
+                                    <div class="col">
+                                        <!-- <h6 class="card-title text-uppercase mb-0">Reset</h6>
+                                        <span class="h4 font-weight-bold mb-0" id="average_salary_bracket">Filters</span> -->
+                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                         <span class="glyphicon">&#8634;</span>
+                                        
+                                        
+                                        <!-- <span><i class="fa fa-refresh fa-3x " aria-hidden="true" ></i><span></span> -->
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+        <div class="row">
+            <div class="col-xl-2">
+                <div class="card bg-default">
+                    <div class="card-header bg-transparent">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <h4 class="mb-0" style="font-family: 'Times New Roman', Times, serif;">Gender</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <!-- Chart -->
+                        <div id="gender_chart" class="chart"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="card bg-default">
+                    <div class="card-header bg-transparent">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <h4 class="mb-0" style="font-family: 'Times New Roman', Times, serif;">Countries</h4>
+                                <h6 style="text-align:center;font-size:12px">This map shows total number of responders at all times </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                            <div id="world_chart" class="chart"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2">
+                <div class="card bg-default">
+                    <div class="card-header border-0">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <h4 class="mb-0" style="font-family: 'Times New Roman', Times, serif;">Visualization Tools</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <!-- Chart -->
+                        <div class="chart" id="level_of_work"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2">
+                <div class="card bg-default">
+                    <div class="card-header border-0">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <h4 class="mb-0" style="font-family: 'Times New Roman', Times, serif;">ML Libraries</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <!-- Chart -->
+                        <div class="chart" id="ml_libraries_dist"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <div class="col-xl-4">
+                <div class="card bg-default">
+                    <div class="card-header bg-transparent">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <h4 class="mb-0" style="font-family: 'Times New Roman', Times, serif;">Level of Education</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <!-- Chart -->
+                        <div class="chart" id="education_chart">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-xl-3">
+                <div class="card bg-default">
+                    <div class="card-header border-0">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <h4 class="mb-0" style="font-family: 'Times New Roman', Times, serif;">Job Roles</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <!-- Chart -->
+                        <div class="chart" id="job_title_chart"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-5">
+                <div class="card bg-default">
+                    <div class="card-header border-0">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <h4 class="mb-0" style="font-family: 'Times New Roman', Times, serif;">Age</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <!-- Chart -->
+                        <div class="chart" id="age_chart">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <!-- <footer class="footer pt-0">
+            <div class="row align-items-center justify-content-lg-between">
+                <div class="col-lg-12">
+                    <div class="text-center text-lg-left">
+                    </div>
+                </div>
+            </div>
+        </footer> -->
+    </div>
+</div>
+
+
+
+<!-- Core -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="/static/vendor/jquery/dist/jquery.min.js"></script>
+<script src="/static/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/static/vendor/js-cookie/js.cookie.js"></script>
+<script src="/static/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+<script src="/static/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+
+<script type="text/javascript" src="static/js/cloud.js"></script>
+<script type="text/javascript" src="static/js/d3.wordcloud.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+
+<script src="/static/js/render_ml_lib_dist.js" type="text/javascript"></script>
+<script src="/static/js/render_viz_lib_dist.js" type="text/javascript"></script>
+<script src="/static/js/render_world_map.js" type="text/javascript"></script>
+<!--<script src="/static/js/render_primary_tool_dist.js" type="text/javascript"></script> -->
+<script src="/static/js/render_job_title_dist.js" type="text/javascript"></script>
+<script src="/static/js/render_age_dist.js" type="text/javascript"></script>
+<script src="/static/js/render_education_dist.js" type="text/javascript"></script>
+<script src="/static/js/render_gender_dist.js" type="text/javascript"></script>
+<script src="/static/js/main.js"></script>
+</body>
+</html>
